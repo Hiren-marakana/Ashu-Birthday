@@ -12,16 +12,19 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    padding: 20px;  /* Added padding to ensure pink background is visible */
 }
 
 .card {
-    background-color: white;
+    background-color: #fff8dc; /* Light beige card background */
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 80%;
-    max-width: 600px;
+    width: 90%;  /* Increased the width */
+    max-width: 500px;  /* Limit max-width to ensure it's centered */
     text-align: center;
+    margin: 0 auto;  /* Ensure it's centered */
+    border: 2px solid rgba(0, 0, 0, 0.1);  /* Slight border for card definition */
 }
 
 .overlay {
