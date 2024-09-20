@@ -2,11 +2,12 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Playfair Display', serif;
-    background-color: #f2f2f2;
+    background-color: black;  /* Set bodyy background to black */
 }
 
 .background {
-    background-image: linear-gradient(to bottom, #ff9a9e, #fecfef);
+    /* Removed the gradient background and set it to black */
+    background-color: black;
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -20,25 +21,26 @@ body {
 
 .title {
     font-size: 48px;
-    color: #333;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    color: red;  /* Changed to red for the heading */
+    text-shadow: 2px 2px 5px rgba(255, 255, 255, 0.1);  /* Lighter text shadow */
 }
 
 .subtitle {
     font-size: 24px;
-    color: #666;
+    color: white;  /* Set subtitle color to white */
     margin-bottom: 40px;
 }
 
 .message {
     font-size: 20px;
-    color: #444;
+    color: white;  /* Set message color to white */
     line-height: 1.5;
     margin-bottom: 40px;
 }
+
 .love-message {
     font-size: 24px;
-    color: #666;
+    color: white;  /* Set love message color to white */
     font-style: italic;
 }
 
@@ -46,8 +48,9 @@ audio {
     width: 0;
     height: 0;
 }
+
 .play-button {
-    background-color: #ff9a9e;
+    background-color: red;  /* Changed to red for better contrast with black */
     color: #fff;
     border: none;
     padding: 10px 20px;
@@ -58,5 +61,5 @@ audio {
 }
 
 .play-button:hover {
-    background-color: #fecfef;
+    background-color: #ff4d4d;  /* Darker hover effect */
 }
