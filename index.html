@@ -1,4 +1,3 @@
-<!-- */for git/* -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,55 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Happy Birthday, My Love</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            margin: 0;
-            background-color: black;
-            color: white;
-            font-family: Arial, sans-serif;
-        }
-        .overlay {
-            text-align: center;
-            padding: 20px;
-        }
-        h1 {
-            color: red;
-            font-size: 2.5rem;
-        }
-        .subtitle, .message, .love-message {
-            font-size: 1.2rem;
-        }
-
-        /* Responsive mobile-friendly styles */
-        @media only screen and (max-width: 600px) {
-            h1 {
-                font-size: 2rem;
-            }
-            .subtitle, .message, .love-message {
-                font-size: 1rem;
-            }
-        }
-    </style>
 </head>
 <body>
     <div class="background">
-        <!-- Audio -->
-        <audio id="birthday-song" loop autoplay>
-            <source src="https://www.dropbox.com/scl/fi/pd0la6dfhx31b7g2s47ei/Ashu-s-Bday-gift-audio-1-online-audio-converter.com.mp3?rlkey=7uh0gp3qosn4iewfpo06i1lqc&st=geeb6orq&dl=1" type="audio/mp3">
-        </audio>
-
-        <!-- Content -->
-        <div class="overlay">
-            <h1 class="title">Happy Birthday, My Forever Love</h1>
-            <p class="subtitle">Even though we're apart, you're always in my heart.</p>
-            <div class="message">
-                <p>Every moment without you feels like an eternity. But with every passing day, my love for you only grows stronger.</p>
-                <p>In this vast distance, my heart beats only for you. You're the melody that fills my silence, the light that brightens my darkness.</p>
-                <p>On your special day and always, know that you're cherished, loved, and forever mine.</p>
+        <div class="card">
+            <!-- Flower Decoration -->
+            <div class="flowers">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" class="flower-icon">
+                    <!-- Drawing a simple flower -->
+                    <circle cx="50" cy="50" r="10" fill="yellow"/>
+                    <circle cx="30" cy="50" r="10" fill="red"/>
+                    <circle cx="70" cy="50" r="10" fill="red"/>
+                    <circle cx="50" cy="30" r="10" fill="red"/>
+                    <circle cx="50" cy="70" r="10" fill="red"/>
+                </svg>
             </div>
-            <div class="love-message">
-                <p>To my future fiancée, my partner, my best friend,</p>
-                <p>I promise to love you more with each passing day. Happy Birthday, my darling!</p>
+
+            <!-- Content inside the card -->
+            <div class="overlay">
+                <h1 class="title">Happy Birthday, My Forever Love</h1>
+                <p class="subtitle">Even though we're apart, you're always in my heart.</p>
+                <div class="message">
+                    <p>Every moment without you feels like an eternity. But with every passing day, my love for you only grows stronger.</p>
+                    <p>In this vast distance, my heart beats only for you. You're the melody that fills my silence, the light that brightens my darkness.</p>
+                    <p>On your special day and always, know that you're cherished, loved, and forever mine.</p>
+                </div>
+                <div class="love-message">
+                    <p>To my future fiancée, my partner, my best friend,</p>
+                    <p>I promise to love you more with each passing day. Happy Birthday, my darling!</p>
+                </div>
+                <!-- Kiss at the bottom -->
+                <div class="kiss">
+                    💋💋💋💋💋💋
+                </div>
             </div>
         </div>
     </div>
