@@ -1,0 +1,62 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Playfair Display', serif;
+    background-color: #f2f2f2;
+}
+
+.background {
+    background-image: linear-gradient(to bottom, #ff9a9e, #fecfef);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    text-align: center;
+    padding: 20px;
+}
+
+.title {
+    font-size: 48px;
+    color: #333;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.subtitle {
+    font-size: 24px;
+    color: #666;
+    margin-bottom: 40px;
+}
+
+.message {
+    font-size: 20px;
+    color: #444;
+    line-height: 1.5;
+    margin-bottom: 40px;
+}
+.love-message {
+    font-size: 24px;
+    color: #666;
+    font-style: italic;
+}
+
+audio {
+    width: 0;
+    height: 0;
+}
+.play-button {
+    background-color: #ff9a9e;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+
+.play-button:hover {
+    background-color: #fecfef;
+}
