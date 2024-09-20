@@ -9,8 +9,8 @@
             margin: 0;
             padding: 0;
             font-family: 'Playfair Display', serif;
-            background-color: #f5d6e0; /* Soft pink background */
-            color: #222;
+            background-color: black; /* Black background */
+            color: white;
             text-align: center;
         }
 
@@ -22,7 +22,7 @@
         }
 
         .card {
-            background-color: #fffaf0; /* Light cream card background */
+            background-color: white; /* White card background */
             border-radius: 20px;
             padding: 30px;
             box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
@@ -39,6 +39,7 @@
 
         .message {
             font-size: 18px;
+            color: black; /* Black text inside the card */
             margin-bottom: 25px;
         }
 
@@ -88,10 +89,6 @@
 </head>
 <body>
     <div class="background">
-        <!-- Audio -->
-        <audio id="birthday-song" loop autoplay>
-            <source src="https://www.dropbox.com/scl/fi/r1urlpj0ibc4oenb367q5/Happy-Birthday-Poetry-_-Birthday-Wish-Poem-by-Abhash-Jha.mp3?rlkey=xso5m8swmi6a6tyf19dnmzlpe&st=hizuhhu0&dl=3" type="audio/mp3">
-        </audio>
         <div class="card">
             <h1>Forever in My Heart</h1>
             <div class="message">
@@ -106,6 +103,11 @@
             </div>
         </div>
     </div>
+
+    <!-- Audio -->
+    <audio id="birthday-song" loop autoplay>
+        <source src="https://www.dropbox.com/scl/fi/r1urlpj0ibc4oenb367q5/Happy-Birthday-Poetry-_-Birthday-Wish-Poem-by-Abhash-Jha.mp3?rlkey=xso5m8swmi6a6tyf19dnmzlpe&st=hizuhhu0&dl=3" type="audio/mp3">
+    </audio>
 
     <!-- Page navigation -->
     <div class="page-nav">
