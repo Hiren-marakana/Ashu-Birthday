@@ -1,3 +1,0 @@
-this is the first file of github
-this is my second commit tuesday
-this is third commit from the github browser
