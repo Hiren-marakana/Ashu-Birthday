@@ -6,87 +6,43 @@ body {
 }
 
 .background {
-    /* Baby pink gradient, darker at the top, lighter at the bottom */
     background-image: linear-gradient(to bottom, #ffb6c1, #ffe4e1);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;  /* Added padding to ensure pink background is visible */
-}
-
-.card {
-    background-color: #fff8dc; /* Light beige card background */
-    border-radius: 20px;
-    padding: 30px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 90%;  /* Increased the width */
-    max-width: 500px;  /* Limit max-width to ensure it's centered */
-    text-align: center;
-    margin: 0 auto;  /* Ensure it's centered */
-    border: 2px solid rgba(0, 0, 0, 0.1);  /* Slight border for card definition */
-}
-
-.overlay {
-    text-align: center;
     padding: 20px;
 }
 
-.title {
-    font-size: 48px;
-    color: red;  /* Red heading for contrast */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.subtitle {
-    font-size: 24px;
-    color: #666;
-    margin-bottom: 40px;
-}
-
-.message {
-    font-size: 20px;
-    color: #444;
-    line-height: 1.5;
-    margin-bottom: 40px;
-}
-
-.love-message {
-    font-size: 24px;
-    color: #666;
-    font-style: italic;
+.card {
+    background-color: #fff8dc;
+    border-radius: 20px;
+    padding: 30px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    width: 90%;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
 }
 
 .kiss {
     font-size: 48px;
-    color: red;  /* Kiss in red */
+    color: red;
     margin-top: 40px;
 }
 
-/* Flower decoration above the title */
-.flowers {
-    text-align: center;
-    margin-bottom: 20px;
+.butterfly {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background: url('https://www.pngitem.com/pimgs/m/0-7806_butterfly-png-clipart-png-download-transparent-butterfly-png.png') no-repeat;
+    background-size: contain;
+    display: none; /* Initially hidden, shown in script.js */
+    animation: fly 10s infinite linear;
 }
 
-.flower-icon {
-    width: 60px;
-    height: 60px;
-}
-
-/* Responsive design */
-@media only screen and (max-width: 600px) {
-    .title {
-        font-size: 36px;
-    }
-    .subtitle, .message, .love-message {
-        font-size: 16px;
-    }
-    .flower-icon {
-        width: 40px;
-        height: 40px;
-    }
-    .kiss {
-        font-size: 36px;
-    }
+@keyframes fly {
+    0% { transform: translate(0, 0); }
+    50% { transform: translate(90vw, -50vh); }
+    100% { transform: translate(0, 0); }
 }
