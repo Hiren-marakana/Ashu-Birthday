@@ -7,64 +7,64 @@ body {
 
 .background {
     /* Baby pink gradient, darker at the top, lighter at the bottom for page 1 */
-    background-image: linear-gradient(to bottom, #ffb6c1, #ffe4e1);
+    background-image: linear-gradient(to bottom, #ffb6c1, #ffe4e1); 
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
-    box-sizing: border-box; /* Ensures padding is included in width/height */
+    padding: 10px;
+    box-sizing: border-box;
 }
 
 .card {
     background-color: #fff8dc; /* Light beige card background */
     border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 100%;  /* Make sure the card takes full width on smaller screens */
-    max-width: 500px;
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Increased shadow for more card-like effect */
+    width: 100%;
+    max-width: 400px; /* Limit width for a more card-like feel */
     text-align: center;
     margin: 0 auto;
     border: 2px solid rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Ensure padding doesn't add to the card width */
+    box-sizing: border-box;
+    overflow: hidden; /* Prevent overflow of large elements */
 }
 
 .overlay {
-    text-align: center;
     padding: 20px;
     box-sizing: border-box;
 }
 
 .title {
-    font-size: 48px;
+    font-size: 36px; /* Reduced the size for mobile */
     color: red;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    word-wrap: break-word; /* Ensures long words break in smaller screens */
+    margin: 0 0 20px 0;
 }
 
 .subtitle {
-    font-size: 24px;
+    font-size: 20px;
     color: #666;
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 .message {
-    font-size: 20px;
+    font-size: 18px;
     color: #444;
-    line-height: 1.5;
-    margin-bottom: 40px;
+    line-height: 1.6;
+    margin-bottom: 20px;
 }
 
 .love-message {
-    font-size: 24px;
+    font-size: 20px;
     color: #666;
     font-style: italic;
 }
 
 .kiss {
-    font-size: 48px;
+    font-size: 36px;
     color: red;
-    margin-top: 40px;
+    margin-top: 20px;
 }
 
 .pagination {
@@ -72,10 +72,10 @@ body {
 }
 
 .pagination a {
-    font-size: 20px;
+    font-size: 16px;
     color: blue;
     text-decoration: none;
-    margin: 0 10px;
+    margin: 0 5px;
 }
 
 .pagination a:hover {
@@ -85,18 +85,20 @@ body {
 /* Responsive design */
 @media only screen and (max-width: 600px) {
     .background {
-        padding: 10px;  /* Reduce padding for smaller screens */
+        padding: 5px; /* Less padding for smaller screens */
     }
     .card {
-        padding: 20px;
+        padding: 20px; /* Ensure padding inside card stays proportional */
+        max-width: 350px; /* Slightly reduce card width */
     }
     .title {
-        font-size: 32px; /* Reduce title font size for mobile */
+        font-size: 28px; /* Further reduced title size for mobile */
+        margin-bottom: 15px;
     }
     .subtitle, .message, .love-message {
-        font-size: 16px; /* Adjust font size for smaller screens */
+        font-size: 16px;
     }
     .kiss {
-        font-size: 36px; /* Slightly smaller kiss emoji on smaller screens */
+        font-size: 30px;
     }
 }
