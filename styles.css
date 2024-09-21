@@ -1,13 +1,4 @@
-body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Playfair Display', serif;
-    background-color: #f2f2f2;
-}
-
 .background {
-    /* Baby pink gradient, darker at the top, lighter at the bottom for page 1 */
-    background-image: linear-gradient(to bottom, #ffb6c1, #ffe4e1); 
     height: 100vh;
     display: flex;
     justify-content: center;
@@ -16,89 +7,26 @@ body {
     box-sizing: border-box;
 }
 
+.page2 {
+    background-color: hwb(240 43% 24%); /* Light Blue background */
+}
+
+.page3 {
+    background-color: #333; /* Lighter shade of black/gray for page 3 */
+}
+
+/* Keep existing styles for card and other elements */
 .card {
-    background-color: #fff8dc; /* Light beige card background */
     border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15); /* Increased shadow for more card-like effect */
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
     width: 100%;
-    max-width: 400px; /* Limit width for a more card-like feel */
+    max-width: 400px;
     text-align: center;
     margin: 0 auto;
     border: 2px solid rgba(0, 0, 0, 0.1);
     box-sizing: border-box;
-    overflow: hidden; /* Prevent overflow of large elements */
+    overflow: hidden;
 }
 
-.overlay {
-    padding: 20px;
-    box-sizing: border-box;
-}
-
-.title {
-    font-size: 36px; /* Reduced the size for mobile */
-    color: red;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 0 0 20px 0;
-}
-
-.subtitle {
-    font-size: 20px;
-    color: #666;
-    margin-bottom: 20px;
-}
-
-.message {
-    font-size: 18px;
-    color: #444;
-    line-height: 1.6;
-    margin-bottom: 20px;
-}
-
-.love-message {
-    font-size: 20px;
-    color: #666;
-    font-style: italic;
-}
-
-.kiss {
-    font-size: 36px;
-    color: red;
-    margin-top: 20px;
-}
-
-.pagination {
-    margin-top: 20px;
-}
-
-.pagination a {
-    font-size: 16px;
-    color: blue;
-    text-decoration: none;
-    margin: 0 5px;
-}
-
-.pagination a:hover {
-    text-decoration: underline;
-}
-
-/* Responsive design */
-@media only screen and (max-width: 600px) {
-    .background {
-        padding: 5px; /* Less padding for smaller screens */
-    }
-    .card {
-        padding: 20px; /* Ensure padding inside card stays proportional */
-        max-width: 350px; /* Slightly reduce card width */
-    }
-    .title {
-        font-size: 28px; /* Further reduced title size for mobile */
-        margin-bottom: 15px;
-    }
-    .subtitle, .message, .love-message {
-        font-size: 16px;
-    }
-    .kiss {
-        font-size: 30px;
-    }
-}
+/* Rest of your existing CSS */
