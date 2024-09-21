@@ -6,13 +6,15 @@
     padding: 10px;
     box-sizing: border-box;
 }
-
+.index {
+    background-color: hwb(301 66% 17%); /* Light Blue background */
+}
 .page2 {
-    background-color: hwb(240 43% 24%); /* Light Blue background */
+    background-color: hwb(57 39% 12%); /* Light Blue background */
 }
 
 .page3 {
-    background-color: #333; /* Lighter shade of black/gray for page 3 */
+    background-color: #131313; /* Lighter shade of black/gray for page 3 */
 }
 
 /* Keep existing styles for card and other elements */
