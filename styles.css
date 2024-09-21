@@ -35,20 +35,17 @@ body {
 
 .subtitle {
     font-size: 24px;
-    color: #666;
     margin-bottom: 40px;
 }
 
 .message {
     font-size: 20px;
-    color: #444;
     line-height: 1.5;
     margin-bottom: 40px;
 }
 
 .love-message {
     font-size: 24px;
-    color: #666;
     font-style: italic;
 }
 
