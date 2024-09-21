@@ -2,51 +2,62 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Playfair Display', serif;
+    background-color: #f2f2f2;
 }
 
 .background {
+    /* Baby pink gradient, darker at the top, lighter at the bottom for page 1 */
+    background-image: linear-gradient(to bottom, #ffb6c1, #ffe4e1);
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 20px;
+    box-sizing: border-box; /* Ensures padding is included in width/height */
 }
 
 .card {
+    background-color: #fff8dc; /* Light beige card background */
     border-radius: 20px;
     padding: 30px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
-    width: 90%;
+    width: 100%;  /* Make sure the card takes full width on smaller screens */
     max-width: 500px;
     text-align: center;
     margin: 0 auto;
     border: 2px solid rgba(0, 0, 0, 0.1);
-    position: relative;
+    box-sizing: border-box; /* Ensure padding doesn't add to the card width */
 }
 
 .overlay {
     text-align: center;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 .title {
     font-size: 48px;
+    color: red;
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    word-wrap: break-word; /* Ensures long words break in smaller screens */
 }
 
 .subtitle {
     font-size: 24px;
+    color: #666;
     margin-bottom: 40px;
 }
 
 .message {
     font-size: 20px;
+    color: #444;
     line-height: 1.5;
     margin-bottom: 40px;
 }
 
 .love-message {
     font-size: 24px;
+    color: #666;
     font-style: italic;
 }
 
@@ -73,13 +84,19 @@ body {
 
 /* Responsive design */
 @media only screen and (max-width: 600px) {
+    .background {
+        padding: 10px;  /* Reduce padding for smaller screens */
+    }
+    .card {
+        padding: 20px;
+    }
     .title {
-        font-size: 36px;
+        font-size: 32px; /* Reduce title font size for mobile */
     }
     .subtitle, .message, .love-message {
-        font-size: 16px;
+        font-size: 16px; /* Adjust font size for smaller screens */
     }
     .kiss {
-        font-size: 36px;
+        font-size: 36px; /* Slightly smaller kiss emoji on smaller screens */
     }
 }
